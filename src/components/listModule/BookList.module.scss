@@ -1,0 +1,53 @@
+.ul {
+  margin-top: 1.2rem;
+  border: 2px solid black;
+  .no-book {
+    text-align: center;
+    padding: 0.5rem;
+  }
+  h3 {
+    text-align: center;
+  }
+  li {
+    border: none;
+    white-space: nowrap;
+    display: grid;
+    grid-template-columns: 10% 60% 40%;
+    justify-content: space-between;
+    align-items: center;
+    &:first-child {
+      border: none;
+    }
+
+    span {
+      display: inline-block;
+    }
+    .book-name {
+      justify-self: start;
+    }
+    button {
+      width: fit-content;
+      border: none;
+      padding: 0.4rem 0.8rem;
+      &:hover,
+      &:active {
+        background-color: white;
+      }
+    }
+    .btn-delete {
+      background-color: red;
+      &:active,
+      &:hover {
+        box-shadow: inset 0 0 0 2px red;
+      }
+    }
+    .btn-view {
+      background-color: #fed7aa;
+      margin-left: 0.4rem;
+      &:active,
+      &:hover {
+        box-shadow: inset 0 0 0 2px #fed7aa;
+      }
+    }
+  }
+}

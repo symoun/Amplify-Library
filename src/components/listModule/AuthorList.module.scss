@@ -1,0 +1,19 @@
+.list {
+  h2 {
+    text-align: center;
+  }
+  li {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 10% 20% 62% 8%;
+
+    padding: 0.8rem 1.8rem;
+    list-style: none;
+    border-bottom: 2px solid #d4d4d8;
+    position: relative;
+    &:first-child {
+      margin-top: 1.2rem;
+      border-top: 2px solid #d4d4d8;
+    }
+  }
+}
